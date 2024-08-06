@@ -15,17 +15,20 @@ public class Percentage {
         Scanner scn = new Scanner(System.in);
         System.out.print("enter Percentage = ");
         float Percentage = scn.nextFloat();
-        if(Percentage>=90){
+        if(Percentage>100){
+            System.out.println("Please enter a valid Percentage");
+        }
+        else if (Percentage >= 90) {
             System.out.println("your grade is A");
-        }else if(Percentage>=80){
+        } else if (Percentage >= 80) {
             System.out.println("your grade is B");
-        }else if(Percentage>=70){
+        } else if (Percentage >= 70) {
             System.out.println("your grade is C");
-        }else if(Percentage>=60){
+        } else if (Percentage >= 60) {
             System.out.println("your grade is D");
-        }else if(Percentage>=50){
+        } else if (Percentage >= 50) {
             System.out.println("your grade is E");
-        }else {
+        } else {
             System.out.println("your grade is A");
         }
 
